@@ -1,0 +1,208 @@
+@import url('https://fonts.googleapis.com/css2?family=Domine&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background: linear-gradient(to right, #0f0c29, #302b63, #24243e);
+    font-family: 'Domine', serif;
+}
+
+.form-container{
+    width: 100%;
+    height: 100vh;
+}
+
+.form-container form{
+    position: fixed;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 350px;
+    margin: 0 auto;
+    height: 500px;
+    overflow-y: scroll;
+    background-color: rgb(255,255,255);
+    padding: 20px 25px;
+    box-shadow: 1px 2px 5px 2px rgba(0,0,0,0.5);
+}
+
+form::-webkit-scrollbar{
+    width: 5px;
+}
+
+form::-webkit-scrollbar-thumb{
+    background: linear-gradient(to right, #0f0c29, #302b63, #24243e);
+}
+
+form h1{
+    font-size: 1.50rem;
+    font-weight: bold;
+    text-align: center;
+    text-transform: capitalize;
+    margin-bottom: 15px;
+}
+
+form span{
+    line-height: 35px;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+form input,
+select,
+textarea{
+    width: 100%;
+    padding: 10px 25px;
+    outline: none;
+}
+
+input[type="date"]{
+    padding: 10px 5px 10px 25px;
+}
+
+::placeholder{
+    color: #36374577;
+}
+
+textarea{
+    padding: 10px 25px 10px 10px;
+}
+
+input[type="submit"]{
+    margin-top: 10px;
+    background: linear-gradient(to right, #0f0c29, #302b63, #24243e);
+    color: rgb(255,255,255);
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover{
+    background: linear-gradient(to right, #41295a, #2F0743, #24243e);
+}
+
+/* icon section  */
+form span .icon-show{
+    width: 100%;
+    position: relative;
+}
+
+form span .icon-show i{
+    position: absolute;
+    top: -30px;
+    left: 5px;
+    font-size: 1.20rem;
+    color: #3637455e;
+}
+
+form span .icon-show .fa-info-circle{
+    position: absolute;
+    top: -30px;
+    left: 93%;
+}
+
+
+form span .icon-show .fa-info-circle{
+    color: rgba(207, 34, 34, 0.84);
+    display: none;
+}
+
+form span #capcherCode{
+    width: 130px;
+}
+
+form span .capcherCodeBox{
+    background: linear-gradient(to right, #0f0c29, #302b63, #24243e);
+    color: rgb(255,255,255);
+    padding: 11px 5px;
+    border-radius: 5px;
+    font-size: 14px;
+    letter-spacing: 3px;
+    font-weight: normal;
+}
+
+form span input[type="checkbox"]{
+    position: relative;
+    top: 10px;
+    width: 50px;
+    height: 20px;
+    outline: none;
+    cursor: pointer;
+}
+
+form span .trimandcondition{
+    width: 85%;
+    margin: -25px 5px 0 auto;
+    font-size: 10px;
+    color: #3a3a3bc2;
+    line-height: 15px;
+}
+
+/* pop  */
+
+.pop{
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    z-index: 55;
+    overflow: hidden;
+    visibility: hidden;
+    opacity: 0;
+    transition: 0.5s ease;
+}
+
+.pop.popActive{
+    overflow: visible;
+    visibility: visible;
+    opacity: 1;
+    transition: 0.5s ease;
+}
+
+.pop::before{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 100vh;
+    content: "";
+    background-color: rgba(0, 0, 0,0.5);
+}
+
+.popContainer{
+    width: 200px;
+    height: 150px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: linear-gradient(to right, #0f0c29, #302b63, #24243e);
+    border: 5px solid gray;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.popContainer h1{
+    margin: 20px 0;
+    font-size: 14px;
+    color: rgb(255,255,255);
+}
+
+.popContainer button{
+    width: 50px;
+    height: 50px;
+    border-radius: 5px;
+    background-color: rgb(0,0,0);
+    color: rgb(255,255,255);
+    border: none;
+    outline: none;
+    cursor: pointer;
+}

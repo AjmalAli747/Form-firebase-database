@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- awesome cdn  -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <!-- css  -->
+    <link rel="stylesheet" href="API-STYLE/api.css">
+    <title>API</title>
+</head>
+<body>
+    
+    <div class="form-container">
+        <form action="">
+            <h1>admission college</h1>
+            <span>Name : <input type="text" name="" id="name" placeholder="Enter Your Name">
+                <div class="icon-show">
+                    <i class="fa fa-user-circle-o"></i>
+                    <i class="fa fa-info-circle iconFirst"></i>
+                </div>
+            </span>
+            <span>Email : <input type="email" name="" id="email" placeholder="Enter Your Email">
+                <div class="icon-show">
+                    <i class="fa fa-envelope-o"></i>
+                    <i class="fa fa-info-circle iconSecound"></i>
+                </div>
+            </span>
+            <span>Password : <input type="password" name="" id="password" placeholder="Enter Your Password">
+                <div class="icon-show">
+                    <i class="fa fa-unlock-alt"></i>
+                    <i class="fa fa-info-circle iconthreed"></i>
+                </div>
+            </span>
+            <span>Date Of Birth : <input type="date" name="" id="date">
+                <div class="icon-show">
+                    <i class="fa fa-calendar"></i>
+                </div>
+            </span>
+            <span>Contact Number : <input type="tel" name="" id="number" placeholder="Enter Your Number">
+                <div class="icon-show">
+                    <i class="fa fa-phone"></i>
+                    <i class="fa fa-info-circle iconFourth"></i>
+                </div>
+            </span>
+            <span>Select Course : <select name="" id="course">
+                <option value="">Select Course</option>
+                <option value="B.Tech">B.Tech</option>
+                <option value="B.Arch">B.Arch</option>
+                <option value="BCA">BCA</option>
+                <option value="B.Sc">B.Sc</option>
+                <option value="BPharma">BPharma</option>
+                <option value="B.Sc- Interior Design">B.Sc- Interior Design</option>
+                <option value="BBA">BBA</option>
+                <option value="BMC">BMC</option>
+                <option value="BFA">BFA</option>
+                <option value="BFD">BFD</option>
+                <option value="BSW">BSW</option>
+                <option value="BBS">BBS</option>
+                <option value="BTTM">BTTM</option>
+                <option value="BA">BA</option>
+                <option value="B.Com">B.Com</option>
+            </select>
+            <div class="icon-show">
+                <i class="fa fa-book"></i>
+            </div>
+        </span>
+            <span>Country Name : <select name="" id="countryName">
+            <option value="">Select Country</option>
+            </select>
+            <div class="icon-show">
+                <i class="fa fa-globe"></i>
+            </div>
+        </span>
+            <span>Year : <select name="" id="year">
+                <option value="">Select Year</option>
+                </select>
+                <div class="icon-show">
+                    <i class="fa fa-calendar"></i>
+                </div>
+            </span>
+            <span>Pincode : <input type="tel" name="" id="pincode" placeholder="Enter Your PinCode">
+                <div class="icon-show">
+                    <i class="fa fa-map-marker"></i>
+                    <i class="fa fa-info-circle iconFifth"></i>
+                </div>
+            </span>
+            <span>Gender : <select name="" id="gender">
+                <option value="">Select Gender</option>
+                <option value="Male">Male</option>
+                <option value="Woman">Woman</option>
+                <option value="Other">Other</option>
+            </select>
+            <div class="icon-show">
+                <i class="fa fa-male"></i>
+            </div>
+        </span>
+            <span>Message :<textarea name="" id="message" cols="30" rows="10" placeholder="Enter Your Message"></textarea>
+            </span>
+
+            <span>
+                Captcha Code <input type="text" name="" id="capcherCode" maxlength="6" placeholder="Captcha Code">
+                <span class="capcherCodeBox">5ACs5d</span>
+            </span>
+
+            <span>
+                <input type="checkbox" name="" id="chcekcbox">
+                <p class="trimandcondition">After studying all of you thoroughly, fill them all if you agree with this form.</p>
+            </span>
+            <input type="submit" value="Submit" id="submit">
+        </form>
+    </div>
+
+    <!-- pop  -->
+
+    <div class="pop">
+        <div class="popContainer">
+            <h1 id="popText">Hello Wolrd</h1>
+            <button id="closeButton">OK</button>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+<script>
+</script>
+</body>
+<!-- jauqery  -->
+<script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+<!-- javascript  -->
+<script src="API-STYLE/api.js"></script>
+<!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="https://www.gstatic.com/firebasejs/8.7.0/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-auth.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.7.0/firebase-database.js"></script>
+</html>
